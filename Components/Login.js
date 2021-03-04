@@ -5,6 +5,7 @@ export default function App() {
   const [username, setUsername] = useState('Username');
   const [password, setPassword] = useState('Password');
 
+  //username box
   return (
     <View style={styles.container}>
       <Text>Enter Username:</Text>
@@ -27,6 +28,7 @@ export default function App() {
     </View>
   );
 }
+//login button
 
 const styles = StyleSheet.create({
   container: {
