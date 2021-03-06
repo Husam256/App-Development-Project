@@ -8,7 +8,7 @@ import React from 'react';
 //import review from './Components/review';
 //import { NavigationContainer } from '@react-navigation/native';
 import {Text} from 'react-native-paper';
-
+import Login from './Components/Login';
 export default function App() {
-  return <Text> hello world </Text>;
+  return Login();
 }

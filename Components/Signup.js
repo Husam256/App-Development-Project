@@ -15,13 +15,6 @@ export default function App() {
         onChangeText={(value) => setEmail(value)}
       />
 
-      <Text>Create Username:</Text>
-      <TextInput
-        placeholder="e.g. Husam64"
-        style={styles.input}
-        onChangeText={(value) => setUsername(value)}
-      />
-
       <Text>Create Password:</Text>
       <TextInput
         placeholder="Password"
