@@ -40,14 +40,17 @@ export default function App() {
     <View style={styles.container}>
       <Text>Enter Email:</Text>
       <TextInput
-        placeholder="e.g. Husam64"
+        placeholder="e.g. someone@something.com"
+        placeholderTextColor="#003f5c"
         style={styles.input}
         onChangeText={(value) => setEmail(value)}
       />
 
       <Text>Enter Password:</Text>
       <TextInput
+        secureTextEntry
         placeholder="Password"
+        placeholderTextColor="#003f5c"
         style={styles.input}
         onChangeText={(value) => setPassword(value)}
       />
@@ -63,7 +66,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#DEB887',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -73,5 +76,14 @@ const styles = StyleSheet.create({
     padding: 8,
     margin: 10,
     width: 200,
+  },
+  inputView: {
+    width: '80%',
+    backgroundColor: '#465881',
+    borderRadius: 25,
+    height: 50,
+    marginBottom: 20,
+    justifyContent: 'center',
+    padding: 20,
   },
 });
