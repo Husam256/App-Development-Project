@@ -1,13 +1,29 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, View, TextInput, Button} from 'react-native';
+import {StyleSheet, Text, View, TextInput} from 'react-native';
+import {Button} from 'react-native-paper';
 
 export default function App() {
+  const [first_name, setFirstname] = useState('First name');
+  const [last_name, setLastname] = useState('Last name');
   const [email, setEmail] = useState('Email');
-  const [username, setUsername] = useState('Username');
   const [password, setPassword] = useState('Password');
 
   return (
     <View style={styles.container}>
+      <Text>Enter First Name</Text>
+      <TextInput
+        placeholder="e.g. Husam"
+        style={styles.input}
+        onChangeText={(value) => setFirstname(value)}
+      />
+
+      <Text>Enter Last Name</Text>
+      <TextInput
+        placeholder="e.g. Ahmad"
+        style={styles.input}
+        onChangeText={(value) => setLastname(value)}
+      />
+
       <Text> Enter Email</Text>
       <TextInput
         placeholder="e.g. someone@something.com"
@@ -23,7 +39,8 @@ export default function App() {
       />
 
       <Text style={styles.result}>
-        email: {email}, username: {username}, password: {password}
+        firstname: {first_name}, lastname: {last_name}, email: {email},
+        password: {password}
       </Text>
     </View>
   );

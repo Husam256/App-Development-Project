@@ -59,7 +59,6 @@ export default function App() {
     </View>
   );
 }
-//login button
 
 const styles = StyleSheet.create({
   container: {
