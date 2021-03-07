@@ -4,7 +4,6 @@ import {StyleSheet, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {Text} from 'react-native-paper';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 //import Home from './Components/Home';
 //import Login from './Components/Login';
@@ -51,7 +50,7 @@ function Home() {
 function Review() {
   return (
     <View style={styles.container}>
-      <Text>Settings!</Text>
+      <Text>Reviews!</Text>
     </View>
   );
 }
