@@ -1,8 +1,10 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-//import { NavigationContainer } from '@react-navigation/native';
+import {StyleSheet, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
 import {Text} from 'react-native-paper';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 //import Home from './Components/Home';
 //import Login from './Components/Login';
@@ -40,7 +42,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 function Home() {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+    <View style={styles.container}>
       <Text>Home!</Text>
     </View>
   );
@@ -48,7 +50,7 @@ function Home() {
 
 function Review() {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+    <View style={styles.container}>
       <Text>Settings!</Text>
     </View>
   );
@@ -66,3 +68,12 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#DEB887',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
