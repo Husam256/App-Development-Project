@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, View, TextInput} from 'react-native';
 import {Button} from 'react-native-paper';
+import {createStackNavigator} from '@react-navigation/stack';
 
 export default function App() {
   const [email, setEmail] = useState('Email');
@@ -60,6 +61,16 @@ export default function App() {
       </Text>
       <Button onPress={() => requestLogin()}>Submit</Button>
     </View>
+  );
+}
+
+const Stack = createStackNavigator();
+
+function MyStack() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Submit" component={onPress} />
+    </Stack.Navigator>
   );
 }
 
